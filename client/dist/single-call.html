@@ -331,7 +331,7 @@
     function sendSMS(name, phoneNumber, endedReason) {
       const message = `Hello ${name}, Thank you for your time. We will schedule a meeting with you and provide you with an update soon. Reason for ending: ${endedReason || "Not provided"}.`;
 
-      fetch("https://techavtar-ai-calling-88md.onrender.com/api/messages/send-sms", {  // Adjusted the endpoint to match the route path
+      fetch("https://manipal-2.onrender.com/api/messages/send-sms", {  // Adjusted the endpoint to match the route path
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -428,7 +428,7 @@ async function scheduleAppointment() {
     console.log("Latest Transcript:", demoTranscript);
 
     // First, make a POST request to the `/api/demo-transcript` endpoint
-    fetch('https://techavtar-ai-calling-88md.onrender.com/api/demo-transcript', {
+    fetch('https://manipal-2.onrender.com/api/demo-transcript', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -486,7 +486,7 @@ async function scheduleAppointment() {
         };
 
         // Send event data to your event scheduling endpoint
-        return fetch("https://techavtar-ai-calling-88md.onrender.com/calendar/events", {
+        return fetch("https://manipal-2.onrender.com/calendar/events", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
